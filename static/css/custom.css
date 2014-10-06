@@ -1,0 +1,115 @@
+body {
+	background-color: #150018;
+	font-family: Lato-Light;
+	font-size:22px;
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/Lato-Reg.ttf);
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(../fonts/Lato-Lig.ttf);
+}
+.panel-info > .panel-heading {
+	background-color: #581C62;
+	background-image: None;
+	border: none;
+}
+
+.panel-info {
+	border: none;
+}
+
+.panel-title {
+	color: white;
+}
+
+.panel-body {
+	background: #581C62;
+	padding-bottom: 0px;
+	border: 1px;
+	border-color: #581C62;
+	border-radius: 3px;
+	width: 320px;
+}
+
+.btn-success {
+	background-image: none;
+	border: #28012E;
+	background: #28012E;
+}
+
+.logo {
+	display: block;
+	width: 345px;
+	margin: 0 auto;
+}
+
+#vampire {
+	display: inline-block;
+	width: 279px;
+	float: left;
+}
+
+.col-md-6 {
+	width: 35%;
+}
+
+.btn-success:hover, .btn-success:focus {
+	background-color: #AFBB51;
+	color: black;
+}
+
+.col-sm-12 {
+	margin-left: 30%;
+}
+
+.container {
+	display: block;
+	margin: 0 auto;
+	width: 750px;
+}
+
+.col-md-offset-3 {
+	margin: 0;
+}
+
+#login {
+	display: inline-block;
+	position: relative;
+	top: 26px;
+}
+
+.vampire-and-login {
+/*	margin-left: 10px;
+	width: 700px;*/
+	position: relative;
+	right: 81px;
+}
+
+.login-register-buttons {
+	margin-left: 28%;
+}
+
+.btn-logout {
+	background-image: none;
+	border: #581C62;
+	background: #581C62;
+}
+
+.btn-logout:hover, .btn-logout:focus {
+	background-color: #AFBB51;
+	color: black;
+}
+
+.btn {
+	color: white;
+}
+
+#successMessage {
+	color: white;
+	margin: 32px;
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/static/css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="/static/css/custom.css">
+
+{% load staticfiles %}
+{% block javascript %}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="{% static "js/jquery.cookie.js" %}"></script>
+<script type="text/javascript" src="{% static "js/custom.js" %}"></script>
+{% endblock %}
+
+<link rel="shortcut icon" type="image/png" href="/media/favicon.ico"/>
+
+
+<!-- default landing page -->
+    <div class="container">
+
+        <div class="logo">
+            <img src="/media/logo-v2.png">
+        </div>
+
+        <!-- the part users see if logged in successfully -->
+        <center>
+            <div id="loggedInPage">
+
+              <div id ="successMessage">
+               </div>
+
+                <a id="logOut" class="btn btn-logout">Log Out</a>
+
+            </div>
+        </center>
+        <!--------------------------------------------------->
+
+        <div class="vampire-and-login">
+
+            <div id="vampire">
+                <img src="/media/vampire-default.png" width="279px" height="261px">
+            </div>
+
+            <div id="login">
+                <div class="panel panel-info" >
+
+                        <div style="padding-top:30px" class="panel-body" >
+
+                            <form id="loginform" class="form-horizontal" role="form">
+
+                                <div style="margin-bottom: 25px" class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input id="username" type="text" class="form-control" name="username" value="" placeholder="username">
+                                        </div>
+
+                                <div style="margin-bottom: 25px" class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                            <input id="password" type="password" class="form-control" name="password" placeholder="password">
+                                        </div>
+
+
+                                    <div style="margin-top:10px" class="form-group">
+
+                                        <!-- Buttons -->
+                                        <div class="login-register-buttons">
+                                          <a id="loginButton" href="#" class="btn btn-success">Login  </a>
+                                          <a id="registerButton" href="#" class="btn btn-success">Register</a>
+
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </div>
+
+</html>
